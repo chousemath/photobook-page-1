@@ -19,8 +19,37 @@ function checkValues() {
   var val5 = $('#input-5').val();
   var word = val0 + val1 + val2 + val3 + val4 + val5;
   if (word === 'gi5Ho6') {
-    console.log('success');
     $('#container-puzzle').hide();
+    $('#container-puzzle-2').show();
+    setTimeout(function() {
+      $('#input-x0').focus();
+    }, 100);
+  }
+}
+
+function checkValues2() {
+  var val0 = $('#input-x0').val();
+  var val1 = $('#input-x1').val();
+  var val2 = $('#input-x2').val();
+  var val3 = $('#input-x3').val();
+  var val4 = $('#input-x4').val();
+  var val5 = $('#input-x5').val();
+  var val6 = $('#input-x6').val();
+  var val7 = $('#input-x7').val();
+  var val8 = $('#input-x8').val();
+  var val9 = $('#input-x9').val();
+  var val10 = $('#input-x10').val();
+  var val11 = $('#input-x11').val();
+  var val12 = $('#input-x12').val();
+  var val13 = $('#input-x13').val();
+  var val14 = $('#input-x14').val();
+  var val15 = $('#input-x15').val();
+  var val16 = $('#input-x16').val();
+  var val17 = $('#input-x17').val();
+  var word = val0 + val1 + val2 + val3 + val4 + val5 + val6 + val7 + val8 +
+      val9 + val10 + val11 + val12 + val13 + val14 + val15 + val16 + val17;
+  if (word === '6337183664ABNTTFRM') {
+    $('#container-puzzle-2').hide();
     var video = $('#container-video');
     video.show();
     setTimeout(function() {
@@ -52,3 +81,77 @@ $('#input-4').bind('input', function() {
 $('#input-5').bind('input', function() {
   checkValues();
 });
+
+$('#input-x0').bind('input', function() {
+  $('#input-x1').focus();
+  checkValues2();
+});
+$('#input-x1').bind('input', function() {
+  $('#input-x2').focus();
+  checkValues2();
+});
+$('#input-x2').bind('input', function() {
+  $('#input-x3').focus();
+  checkValues2();
+});
+$('#input-x3').bind('input', function() {
+  $('#input-x4').focus();
+  checkValues2();
+});
+$('#input-x4').bind('input', function() {
+  $('#input-x5').focus();
+  checkValues2();
+});
+$('#input-x5').bind('input', function() {
+  $('#input-x6').focus();
+  checkValues2();
+});
+$('#input-x6').bind('input', function() {
+  $('#input-x7').focus();
+  checkValues2();
+});
+$('#input-x7').bind('input', function() {
+  $('#input-x8').focus();
+  checkValues2();
+});
+$('#input-x8').bind('input', function() {
+  $('#input-x9').focus();
+  checkValues2();
+});
+$('#input-x9').bind('input', function() {
+  $('#input-x10').focus();
+  checkValues2();
+});
+$('#input-x10').bind('input', function() {
+  $('#input-x11').focus();
+  checkValues2();
+});
+$('#input-x11').bind('input', function() {
+  $('#input-x12').focus();
+  checkValues2();
+});
+$('#input-x12').bind('input', function() {
+  $('#input-x13').focus();
+  checkValues2();
+});
+$('#input-x13').bind('input', function() {
+  $('#input-x14').focus();
+  checkValues2();
+});
+$('#input-x14').bind('input', function() {
+  $('#input-x15').focus();
+  checkValues2();
+});
+$('#input-x15').bind('input', function() {
+  $('#input-x16').focus();
+  checkValues2();
+});
+$('#input-x16').bind('input', function() {
+  $('#input-x17').focus();
+  checkValues2();
+});
+$('#input-x17').bind('input', function() {
+  checkValues2();
+});
+
+$('#input-0').focus();
